@@ -13,7 +13,7 @@ nav{
     font-weight: 600;
     line-height: normal;
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     display: flex;
     justify-content: flex-end;
@@ -23,7 +23,7 @@ nav{
     }
     
 .menu li {
-        margin-left: 15px; 
+        margin-left: 30px; 
     }
     
 .menu li:first-child {
@@ -34,4 +34,81 @@ img{
     position: absolute;
     top: 15px;
     left: 10px;
+}
+
+h1{
+    color: #110367;
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    padding-right: 10px;
+    margin-right: 100px;
+    width: 407px;
+    height: 40px;
+
+}
+p{
+    color: #110367;
+    font-family: 'Inter' , sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 0px;
+    width: 392px;
+    height: 15px;
+
+}
+
+.home{
+    position: absolute;
+    width: 730px;
+    float: left;
+    margin-top: 7%;
+    margin-left: 45%;
+    height: 456px;
+    display: flex;
+    background: url(assets/doacao.jpg), lightgray 50% / cover no-repeat ;
+    box-shadow: 0px 11px 24px 0px rgba(0, 0, 0, 0.29), 0px 43px 43px 0px rgba(0, 0, 0, 0.26), 0px 97px 58px 0px rgba(0, 0, 0, 0.15), 0px 173px 69px 0px rgba(0, 0, 0, 0.04), 0px 270px 76px 0px rgba(0, 0, 0, 0.01)
+}
+
+h1,p{
+    margin-top: 3%;
+    margin-left: 10%;
+    
+}
+
+.retangulo{
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 127px; 
+    height: 40px; 
+    background-color: #3919FE; 
+    border: 2px solid #3919FE; 
+    color: #FFF;
+    font-family: 'inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center; 
+    line-height: 40px; 
+    float: left;
+    box-shadow: 10px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+.mensagem{
+    padding-left: 3%;
+    text-decoration: underline;
+    margin-top: 15%;
+    margin-left: 20%;
+    color: #110367;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    float: left;
+    margin-left: 10px;
 }
