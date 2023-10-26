@@ -4,6 +4,14 @@ nav{
     padding: 40px;
     position: relative;
 }
+main{
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'inter' , sans-serif;
+}
 
 .menu {
     color: #110367;
@@ -20,6 +28,9 @@ nav{
     position: absolute;
     top: 15px;
     right: 10px;
+    cursor: pointer;
+    transition: all ease-in-out;
+    transition: 0.5s;
     }
     
 .menu li {
@@ -29,6 +40,28 @@ nav{
 .menu li:first-child {
         margin-left: 0; 
     }
+
+#item1:hover , #item1:focus{
+    transform: scale(1.1);
+    color: white;
+    background-color: #3919FE;
+}
+
+#item2:hover , #item2:focus{
+    transform: scale(1.1);
+    color: white;
+    background-color: #3919FE;
+}
+
+#item3:hover , #item3:focus{
+    transform: scale(1.1);
+    color: white;
+    background-color: #3919FE;
+}
+
+.menu:hover{
+    transform: scale(1.1);
+}
 
 img{
     position: absolute;
@@ -47,9 +80,20 @@ h1{
     margin-right: 100px;
     width: 407px;
     height: 40px;
-
+    animation: fliptitler 2s;
 }
-p{
+@keyframes fliptitler {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+
+
+#paragrafo{
     color: #110367;
     font-family: 'Inter' , sans-serif;
     font-size: 24px;
@@ -59,6 +103,7 @@ p{
     padding-top: 0px;
     width: 392px;
     height: 15px;
+    animation: fliptitler 2s;
 
 }
 
@@ -72,6 +117,7 @@ p{
     display: flex;
     background: url(assets/doacao.jpg), lightgray 50% / cover no-repeat ;
     box-shadow: 0px 11px 24px 0px rgba(0, 0, 0, 0.29), 0px 43px 43px 0px rgba(0, 0, 0, 0.26), 0px 97px 58px 0px rgba(0, 0, 0, 0.15), 0px 173px 69px 0px rgba(0, 0, 0, 0.04), 0px 270px 76px 0px rgba(0, 0, 0, 0.01)
+    
 }
 
 h1,p{
@@ -97,6 +143,11 @@ h1,p{
     line-height: 40px; 
     float: left;
     box-shadow: 10px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    transition: transform 0.5s;
+    border-radius: 8px;
+}
+.retangulo:hover{
+    transform: scale(1.2);
 }
 .mensagem{
     padding-left: 3%;
@@ -111,4 +162,65 @@ h1,p{
     line-height: normal;
     float: left;
     margin-left: 10px;
+}
+
+.button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-family:'inter' , sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    transition: transform 0.5s;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.container{
+    padding: 15px 5px;
+    margin: 125px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ; 
+}
+.card{
+    margin: 15px;
+    width: 300px;
+    height: 400px;
+    background-color: #110367;
+    color: white;
+    border-radius: 8px;
+    transition:  .3s all ease;
+    flex: 2;
+    
+
+    
+}
+.card-title{
+    padding: 15px;
+    margin: 15px 5px;
+    cursor: pointer;
+    
+}
+
+
+.card:hover{
+    transform: scale(1.2);
+    background-color: #3919FE;
+    flex: 2;
+}
+
+.image{
+    object-fit: cover;
+    
+    box-shadow: 10px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 8px;
+    width: 250px;
+    height: 200px;
+    margin-left: 15px;
+    margin-bottom: 50px; 
+    position: initial;
 }
